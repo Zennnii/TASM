@@ -27,7 +27,7 @@ TASM supports all TauCPU instructions:
 - `INI`
 - `HLT`
 
-The syntax for each instruction follows the TauCPU instruction set defined in the [instruction_set.txt](https://github.com/Zennnii/TauCPU/README.md).
+The syntax for each instruction follows the TauCPU instruction set defined in the [instruction_set.txt](https://github.com/Zennnii/TauCPU/blob/master/docs/instruction_set.txt).
 
 ## Notes
 - **Case-insensitive**: `add r0, r1` and `ADD R0, R1` are equivalent.
