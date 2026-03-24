@@ -1,0 +1,39 @@
+# Tau Assembler (TASM)
+
+**TASM** is the assembler for **TauCPU**. It converts human-readable assembly programs into machine code that can be executed on the TauCPU emulator.
+
+## Usage
+`tasm input.asm -o output.bin`
+
+
+## Supported Instructions
+TASM supports all TauCPU instructions:
+
+- `ADD`
+- `ADDI`
+- `INC`
+- `DEC`
+- `CMP`
+- `CMPI`
+- `MOV`
+- `MOVI`
+- `LDR`
+- `LDRI`
+- `STR`
+- `STRI`
+- `OUT`
+- `OUTI`
+- `IN`
+- `INI`
+- `HLT`
+
+The syntax for each instruction follows the TauCPU instruction set defined in the [instruction_set.txt](https://github.com/Zennnii/TauCPU/README.md).
+
+## Notes
+- **Case-insensitive**: `add r0, r1` and `ADD R0, R1` are equivalent.
+- Only output-based I/O instructions are fully supported in the current CPU emulator.
+
+## See Also
+- [TauCPU Repo](https://github.com/Zennnii/TauCPU)
+- [TauCPU Instruction Set](https://github.com/Zennnii/TauCPU/docs/instruction_set.txt)
+- [TauCPU I/O Ports](https://github.com/Zennnii/TauCPU/docs/io_ports.txt)
