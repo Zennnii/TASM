@@ -35,5 +35,5 @@ The syntax for each instruction follows the TauCPU instruction set defined in th
 
 ## See Also
 - [TauCPU Repo](https://github.com/Zennnii/TauCPU)
-- [TauCPU Instruction Set](https://github.com/Zennnii/TauCPU/docs/instruction_set.txt)
-- [TauCPU I/O Ports](https://github.com/Zennnii/TauCPU/docs/io_ports.txt)
+- [TauCPU Instruction Set](https://github.com/Zennnii/TauCPU/blob/master/docs/instruction_set.txt)
+- [TauCPU I/O Ports](https://github.com/Zennnii/TauCPU/blob/master/docs/io_ports.txt)
