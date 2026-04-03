@@ -7,25 +7,7 @@
 
 
 ## Supported Instructions
-TASM supports all TauCPU instructions:
-
-- `ADD`
-- `ADDI`
-- `INC`
-- `DEC`
-- `CMP`
-- `CMPI`
-- `MOV`
-- `MOVI`
-- `LDR`
-- `LDRI`
-- `STR`
-- `STRI`
-- `OUT`
-- `OUTI`
-- `IN`
-- `INI`
-- `HLT`
+TASM supports all TauCPU instructions
 
 The syntax for each instruction follows the TauCPU instruction set defined in the [instruction_set.txt](https://github.com/Zennnii/TauCPU/blob/master/docs/instruction_set.txt).
 

@@ -1,14 +1,25 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -O2
+CFLAGS = -Wall -Wextra -g
+
+DEBUG ?= 1
+
+ifeq ($(DEBUG),1)
+CFLAGS += -O0
+else
+CFLAGS += -O2
+endif
 
 SRC = tasm.c \
+      lexer/lexer.c \
       parser/parser.c \
-      bingen/bingen.c \
+      codegen/codegen.c \
       utils/utils.c \
-      bingen/instr_emit/arithmetic.c \
-      bingen/instr_emit/data_transfer.c \
-      bingen/instr_emit/io.c \
-      bingen/instr_emit/program_flow.c
+      codegen/instr_emit/arithmetic.c \
+      codegen/instr_emit/data_transfer.c \
+      codegen/instr_emit/io.c \
+      codegen/instr_emit/program_flow.c \
+      isa/isa.c \
+      labels/labels.c
 
 OBJ = $(SRC:.c=.o)
 

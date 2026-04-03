@@ -38,9 +38,47 @@ void strip_outer_parentheses(char *s) {
     }
 }
 
-void to_uppercase(char *s) {
+void to_uppercase(char *dst, const char *src) {
+    if (!dst || !src) return;
+
+    while (*src) {
+        *dst = toupper((unsigned char)*src);
+        dst++;
+        src++;
+    }
+
+    *dst = '\0';
+}
+int is_alpha(char c) {
+    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == '_';
+}
+
+int is_digit(char c) {
+    return c >= '0' && c <= '9';
+}
+
+int is_number(const char *s) {
+    if (strncmp(s, "0x", 2) == 0 || strncmp(s, "0X", 2) == 0) {
+        s += 2;
+        if (*s == '\0') return 0;
+
+        while (*s) {
+            if (!isxdigit(*s)) return 0;
+            s++;
+        }
+        return 1;
+    }
+
+    // decimal
     while (*s) {
-        *s = toupper((unsigned char)*s);
+        if (!isdigit(*s)) return 0;
         s++;
     }
+    return 1;
+}
+
+int is_hex_digit(char c) {
+    return (c >= '0' && c <= '9') ||
+           (c >= 'a' && c <= 'f') ||
+           (c >= 'A' && c <= 'F');
 }
