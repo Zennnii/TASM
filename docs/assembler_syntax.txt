@@ -1,0 +1,98 @@
+Assembler syntax reference (TASM)
+
+== Arithmetic instructions ==
+
+ADD:
+    ADD reg1, reg2
+
+ADDI:
+    ADDI reg1, imm16
+
+SUB:
+    SUB reg1, reg2
+
+SUBI:
+    SUBI reg1, imm16
+
+INC:
+    INC reg1
+
+DEC:
+    DEC reg1
+
+CMP:
+    CMP reg1, reg2
+
+CMPI:
+    CMPI reg1, imm16
+
+
+== Data transfer instructions ==
+
+MOV:
+    MOV dest, src
+
+MOVI:
+    MOVI dest, imm16
+
+LDR:
+    LDR dest, addrReg
+
+LDRI:
+    LDRI dest, base, imm16
+
+STR:
+    STR src, addrReg
+
+STRI:
+    STRI src, base, imm16
+
+
+== I/O instructions ==
+
+OUT:
+    OUT port, src
+
+OUTI:
+    OUTI port, imm16
+
+
+== Program flow instructions ==
+
+HLT:
+    HLT
+
+JMP:
+    JMP addr
+
+JZ:
+    JZ addr
+
+JNZ:
+    JNZ addr
+
+JN:
+    JN addr
+
+JNN:
+    JNN addr
+
+JC:
+    JC addr
+
+JNC:
+    JNC addr
+
+JV:
+    JV addr
+
+JNV:
+    JNV addr
+
+
+== Notes ==
+
+    imm16 = 16-bit immediate value
+    addr = 16-bit address or label
+    Labels are resolved by the assembler
+    The assembler is case-insensitive (e.g., `add`, `ADD`, and `Add` are treated the same)

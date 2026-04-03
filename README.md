@@ -7,9 +7,8 @@
 
 
 ## Supported Instructions
-TASM supports all TauCPU instructions
-
-The syntax for each instruction follows the TauCPU instruction set defined in the [instruction_set.txt](https://github.com/Zennnii/TauCPU/blob/master/docs/instruction_set.txt).
+Instruction syntax is defined in the TASM assembler reference:
+[Assembly reference](docs/assembler_syntax.txt).
 
 # Features
 - Two-pass assembly process
@@ -26,3 +25,11 @@ The syntax for each instruction follows the TauCPU instruction set defined in th
 - [TauCPU Repo](https://github.com/Zennnii/TauCPU)
 - [TauCPU Instruction Set](https://github.com/Zennnii/TauCPU/blob/master/docs/instruction_set.txt)
 - [TauCPU I/O Ports](https://github.com/Zennnii/TauCPU/blob/master/docs/io_ports.txt)
+
+## Contributing
+
+This is a personal project, but suggestions and improvements are welcome.
+
+## Contact
+
+For questions or feedback, feel free to reach me at: vukmitic81@gmail.com
